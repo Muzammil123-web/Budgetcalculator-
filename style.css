@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  margin: 3rem 0;
+  color: #2aa198;
+  letter-spacing: 2px;
+}
+
+section {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  /* display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #264f63;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+
+  animation: scaleUp 0.2s ease; */
+  display: none;
+}
+.form-group:hover {
+  background-color: #46748b;
+  cursor: pointer;
+}
+label {
+  font-size: 1.2rem;
+  color: #fff;
+}
+output {
+  width: 150px;
+  color: #111;
+  font-weight: 900;
+  background-color: #fff;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+input:focus {
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+.btn {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.btn:active {
+  transform: scale(0.98);
+  transition: 0.1s ease-in-out;
+}
+.btn-success {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.btn-success:active {
+  background-color: lightgreen;
+}
+.dropdown {
+  color: #2aa198;
+  cursor: pointer;
+}
+.dropdown:hover {
+  text-decoration: underline;
+  transition: 0.1ms ease-in-out;
+}
+.dropdown:active {
+  color: #46748b;
+  transition: 0.1ms ease-in-out;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #264f63;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+
+  animation: scaleUp 0.2s ease;
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
